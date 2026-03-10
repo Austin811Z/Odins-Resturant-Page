@@ -1,6 +1,6 @@
 import { loadHome } from "./home.js";
-//import { loadMenu } from "./menu/menu.js";
-//import { loadOurStory } from "./ourStory.js";
+import { loadMenu } from "./menu/menu.js";
+import { loadOurStory } from "./ourStory.js";
 
 const content = document.getElementById("content");
 let currentElements = [];
