@@ -1,1 +1,1 @@
-# Odins-Resturant-Page
+Project [Resturant](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page/project_submissions)
