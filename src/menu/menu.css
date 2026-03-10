@@ -1,0 +1,442 @@
+#mainNav {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 2.5em;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+#content {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 1.5em;
+    
+}
+
+#aboutUsHeader {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0em 1em;
+    background-color: #000000b9;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 50px;
+}
+
+#aboutUsHeader p {
+    margin: 8px;
+}
+
+#aboutUsHeader H5, #openingHoursHeader H5 {
+    font-size: 1.5rem;
+}
+
+#aboutUsHeader H5 {
+    margin: 8px;
+}
+
+#openingHoursHeader p {
+    margin: 0;
+}
+
+#openingHoursHeader H5 {
+    text-align: center;
+    margin: 16px;
+}
+
+#openingHoursHeader {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #000000b9;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 50px;
+    width: 400px;
+    padding: 1em;
+}
+
+#locationHeader p {
+    margin: 0;
+}
+
+#locationHeader {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #000000b9;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    width: 400px;
+    border-radius: 50px;
+    padding: 1em;
+}
+
+#locationHeader H5 {
+    margin: 8px;
+}
+
+
+#menu-nav {
+    grid-column: 1 / 3;
+    display: flex;
+    margin: 16px;
+    justify-content: space-evenly;
+}
+
+#menu-nav .menu-btn {
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: rgba(248, 255, 153, 0.918);
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 150px;
+}
+
+#menu-nav .menu-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+#mainNav button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(248, 255, 153, 0.918);
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+#mainNav button:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+#mainNav button:active {
+    transform: scale(0.95);
+}
+
+#mainNav button.active,
+#menu-nav .menu-btn.active {
+    background-color: #ff9900;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#sides, #sauces, #iceCream, #deserts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+    border-radius: 50px;
+} 
+
+#sides p, #sauces p, #iceCream p, #deserts p {
+    margin: 8px;
+    width: 250px;
+    font-size: 0.9rem;
+    
+} 
+    
+#sides H5, #sauces H5, #iceCream H5, #deserts H5 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 16px;
+}
+
+#burger1, #burger2, #sandwiches1, #sandwiches2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+    border-radius: 50px;
+} 
+
+#burger1 p, #burger2 p, #sandwiches1 p, #sandwiches2 p {
+    margin: 8px;
+    width: 250px;
+    font-size: 0.9rem;
+    
+} 
+    
+#burger1 H5, #burger2 H5, #sandwiches1 H5, #sandwiches2 H5 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 16px;
+}
+
+#softDrinks, #hotDrinks, #freshDrinks, #alcoholDrinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+    border-radius: 50px;
+} 
+
+#softDrinks p, #hotDrinks p, #freshDrinks p, #alcoholDrinks p {
+    margin: 8px;
+    width: 250px;
+    font-size: 0.9rem;
+    
+} 
+    
+#softDrinks H5, #hotDrinks H5, #freshDrinks H5, #alcoholDrinks H5 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 16px;
+}
+
+
+#ourStory {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 1em;
+    justify-self: center;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+}
+
+#ourStory H5 {
+    font-size:2rem;
+    margin: 16px;
+    
+}
+
+#friendOne {
+    grid-column: 1 / 2;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+    border-radius: 50px;
+}
+
+#friendTwo {
+    grid-column: 2 / 3;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+    border-radius: 50px;
+}
+
+#friendThree {
+    grid-column: 1 / 2;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+    border-radius: 50px;
+    margin-bottom: 2em;
+}
+
+#becky {
+    grid-column: 2 / 3;
+    box-shadow: inset -1px 3px 8px 5px #000000, 2px 5px 16px 0px #b4b4b4, 5px 5px 15px 5px rgba(0,0,0,0);
+    background-color: #000000b9;
+    border-radius: 50px;
+    margin-bottom: 2em;
+}
+
+#friendOne H5, #friendTwo H5, #friendThree H5, #becky H5{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#friendOne p:nth-child(2),
+#friendTwo p:nth-child(2),
+#friendThree p:nth-child(2),
+#becky p:nth-child(2) {
+    height: 200px;
+}
+
+#friendOne p:nth-child(3),
+#friendTwo p:nth-child(3),
+#friendThree p:nth-child(3),
+#becky p:nth-child(3) {
+    height: 50px;
+    margin: 0;
+}
+
+#friendOne p:nth-child(4),
+#friendTwo p:nth-child(4),
+#friendThree p:nth-child(4),
+#becky p:nth-child(4) {
+    height: 50px;
+    margin: 0;
+}
+
+#friendOne, #friendTwo, #friendThree, #becky {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-size: 0.8rem;
+}
+
+html, body {
+    height: 100%;         
+    margin: 0;             
+}
+
+body {
+    background-image: url('/src/img/index.jpg'); 
+    background-repeat: no-repeat;   
+    background-size: cover;         
+    background-position: top center;
+    background-attachment: scroll;
+    color: rgba(248, 255, 153, 0.918);
+    font-weight: 800;
+    text-shadow:
+    -2px -2px 0 black,
+    1px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+    -webkit-text-stroke: 0.3px black;
+}
+
+body::before {
+    content: "";
+    position: fixed;       
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/img/index.png');
+    background-size: cover;
+    background-position: top center;
+    z-index: -1;          
+}
+
+@media (max-width: 600px) {
+
+    html, body {
+        display: block;     
+        height: auto;         
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    #content {
+        grid-template-columns: 1fr;
+        width: 95%;  
+        margin: 0 auto;
+        gap: 16px 0;
+
+    }
+
+    #content .card {   
+        width: 100%;       
+        box-sizing: border-box;
+        margin: 0;        
+    }
+
+    #mainNav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+        padding: 8px;
+        align-items: stretch;
+    }
+
+    #menu-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: stretch;  
+    }
+    
+    #mainNav button,
+    #menu-nav .menu-btn {
+        width: 100%;
+        min-width: 0;
+        font-size: 1rem;
+    }
+
+    #burger1, #burger2, #sandwiches1, #sandwiches2,
+    #friendOne, #friendTwo, #friendThree, #becky,
+    #sides, #sauces, #iceCream, #deserts,
+    #softDrinks, #hotDrinks, #freshDrinks, #alcoholDrinks {
+        grid-column: 1 / 1 
+
+    }
+
+    #friendOne, #friendTwo, #friendThree, #becky,
+    #burger1, #burger2, #sandwiches1, #sandwiches2,
+    #sides, #sauces, #iceCream, #deserts,
+    #softDrinks, #hotDrinks, #freshDrinks, #alcoholDrinks,
+    #aboutUsHeader, #openingHoursHeader, #locationHeader, #ourStory {
+        padding: 0.8em;
+    }
+
+    #friendOne H5, #friendTwo H5, #friendThree H5, #becky H5,
+    #burger1 H5, #burger2 H5, #sandwiches1 H5, #sandwiches2 H5,
+    #sides H5, #sauces H5, #iceCream H5, #deserts H5,
+    #softDrinks H5, #hotDrinks H5, #freshDrinks H5, #alcoholDrinks H5,
+    #ourStory H5,
+    #aboutUsHeader H5,
+    #openingHoursHeader H5,
+    #locationHeader H5 {
+        font-size: 2rem;
+    }
+
+    #burger1 p, #burger2 p, #sandwiches1 p, #sandwiches2 p,
+    #sides p, #sauces p, #iceCream p, #deserts p,
+    #softDrinks p, #hotDrinks p, #freshDrinks p, #alcoholDrinks p {
+        font-size: 1.2rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    #friendOne, #friendTwo, #friendThree, #becky {
+        height: auto;       
+        padding: 1em;     
+        width: 95%;        
+        max-width: none;
+    }
+
+
+    #friendOne p, #friendTwo p, #friendThree p, #becky p {
+        height: auto;
+        margin: 0.5em 0;
+        line-height: 1.5;
+        padding: 16px;
+    }
+
+    #friendOne H5, #friendTwo H5, #friendThree H5, #becky H5 {
+        margin-top: 32px;
+        font-size: 1.5rem;
+    }
+
+}
